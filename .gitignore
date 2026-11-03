@@ -1,0 +1,8 @@
+bin/
+obj/
+dist/
+.deps
+.harness/
+mise.local.toml
+*.user
+.DS_Store

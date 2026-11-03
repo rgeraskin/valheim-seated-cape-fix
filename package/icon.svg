@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#34465c"/>
+      <stop offset="1" stop-color="#161d27"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <defs>
+    <clipPath id="hullclip">
+      <path d="M 150,585 Q 515,640 885,585 C 875,700 760,800 515,805 C 280,800 160,700 150,585 Z"/>
+    </clipPath>
+  </defs>
+  <g stroke="#2a1a10" stroke-width="14" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- water behind the hull -->
+    <path d="M 60,770 C 110,750 150,750 200,770 C 250,790 290,790 340,770 C 390,750 430,750 480,770 C 530,790 570,790 620,770 C 670,750 710,750 760,770 C 810,790 850,790 900,770 C 930,758 950,756 975,762 L 975,850 C 950,842 930,844 900,856 C 850,876 810,876 760,856 C 710,836 670,836 620,856 C 570,876 530,876 480,856 C 430,836 390,836 340,856 C 290,876 250,876 200,856 C 150,836 110,836 60,856 Z" fill="#4aa3df"/>
+    <path d="M 600,800 C 630,788 650,788 675,800 M 790,800 C 820,788 840,788 865,800 M 90,800 C 115,790 135,790 155,800" fill="none" stroke="#bfe3f7" stroke-width="10"/>
+
+    <!-- the cape poking out under the hull (drawn first: the hull covers its top) -->
+    <path d="M 205,690 C 195,780 180,870 160,960 L 205,925 L 235,985 L 268,930 L 300,988 L 328,928 L 372,962 C 355,870 348,780 350,700 Z" fill="#2f8f4e"/>
+    <path d="M 262,740 C 258,820 256,880 252,935" fill="none" stroke="#226b3a" stroke-width="10"/>
+
+    <!-- the cape on his back, down into the boat -->
+    <path d="M 255,425 C 215,470 195,530 190,600 L 300,600 C 290,540 280,480 285,430 Z" fill="#2f8f4e"/>
+
+    <!-- body -->
+    <path d="M 245,450 C 245,420 280,405 315,405 C 355,405 385,425 385,460 L 390,610 L 245,610 Z" fill="#3d72b4"/>
+    <path d="M 255,520 L 385,520" fill="none" stroke-width="10"/>
+    <!-- arm to the tiller -->
+    <path d="M 355,455 C 400,480 430,520 455,535" fill="none" stroke="#2a1a10" stroke-width="58"/>
+    <path d="M 355,455 C 400,480 430,520 455,535" fill="none" stroke="#3d72b4" stroke-width="32"/>
+    <!-- tiller -->
+    <path d="M 175,565 L 500,520" fill="none" stroke="#2a1a10" stroke-width="40"/>
+    <path d="M 175,565 L 500,520" fill="none" stroke="#9c6630" stroke-width="18"/>
+    <circle cx="462" cy="533" r="26" fill="#f2c094"/>
+
+    <!-- head -->
+    <circle cx="320" cy="370" r="66" fill="#f2c094"/>
+    <ellipse cx="394" cy="395" rx="22" ry="17" fill="#e8a77a"/>
+    <!-- beard -->
+    <path d="M 272,400 C 287,430 302,438 330,433 C 360,428 385,418 400,410 C 405,440 395,480 365,505 C 345,520 320,515 305,500 C 280,480 265,440 270,385 Z" fill="#e0782a"/>
+    <path d="M 335,440 C 340,465 345,485 352,500" fill="none" stroke-width="8"/>
+    <!-- eye -->
+    <ellipse cx="360" cy="378" rx="9" ry="12" fill="#2a1a10" stroke="none"/>
+
+    <!-- horns -->
+    <path d="M 262,308 C 225,298 200,268 205,218 C 225,240 245,258 275,270 Z" fill="#f4e6c4"/>
+    <path d="M 372,300 C 410,290 432,260 428,210 C 408,232 388,250 360,264 Z" fill="#f4e6c4"/>
+    <!-- helmet -->
+    <path d="M 248,330 C 248,268 285,240 320,240 C 360,240 395,268 395,330 Z" fill="#b8c2cc"/>
+    <path d="M 302,242 C 300,278 300,308 300,330 L 340,330 C 340,308 340,278 338,242 Z" fill="#d62f2f" stroke-width="10"/>
+    <path d="M 262,278 C 268,298 270,316 270,330" fill="none" stroke="#d62f2f" stroke-width="16"/>
+    <path d="M 376,276 C 370,296 368,314 368,330" fill="none" stroke="#d62f2f" stroke-width="16"/>
+    <path d="M 240,323 L 403,323 L 403,348 L 240,348 Z" fill="#8d99a6"/>
+    <circle cx="275" cy="335" r="5" fill="#2a1a10" stroke="none"/>
+    <circle cx="322" cy="335" r="5" fill="#2a1a10" stroke="none"/>
+    <circle cx="368" cy="335" r="5" fill="#2a1a10" stroke="none"/>
+
+    <!-- stern and bow posts -->
+    <path d="M 175,600 C 140,540 110,470 140,420 C 165,385 210,400 200,435 C 192,460 165,450 172,432" fill="none" stroke="#2a1a10" stroke-width="58"/>
+    <path d="M 175,600 C 140,540 110,470 140,420 C 165,385 210,400 200,435 C 192,460 165,450 172,432" fill="none" stroke="#9c6630" stroke-width="32"/>
+    <path d="M 860,600 C 905,540 935,460 905,405 C 880,365 830,380 838,420 C 845,450 875,445 870,425" fill="none" stroke="#2a1a10" stroke-width="58"/>
+    <path d="M 860,600 C 905,540 935,460 905,405 C 880,365 830,380 838,420 C 845,450 875,445 870,425" fill="none" stroke="#9c6630" stroke-width="32"/>
+
+    <!-- hull -->
+    <path d="M 150,585 Q 515,640 885,585 C 875,700 760,800 515,805 C 280,800 160,700 150,585 Z" fill="#a8703a"/>
+    <g clip-path="url(#hullclip)" fill="none" stroke="#7a4d22" stroke-width="10">
+      <path d="M 140,655 Q 515,705 895,655"/>
+      <path d="M 150,720 Q 515,770 885,720"/>
+    </g>
+    <path d="M 150,585 Q 515,640 885,585 C 875,700 760,800 515,805 C 280,800 160,700 150,585 Z" fill="none"/>
+    <path d="M 160,590 Q 515,645 880,590" fill="none" stroke="#c98f52" stroke-width="10"/>
+
+
+    <!-- shields on the rail -->
+    <circle cx="520" cy="612" r="46" fill="#e8c14a"/>
+    <circle cx="520" cy="612" r="13" fill="#9aa5b1" stroke-width="8"/>
+    <circle cx="630" cy="610" r="46" fill="#d62f2f"/>
+    <circle cx="630" cy="610" r="13" fill="#9aa5b1" stroke-width="8"/>
+    <circle cx="740" cy="602" r="46" fill="#e8c14a"/>
+    <circle cx="740" cy="602" r="13" fill="#9aa5b1" stroke-width="8"/>
+
+    <!-- crossed out: the cape under the hull -->
+    <path d="M 160,745 L 375,965 M 375,745 L 160,965" fill="none" stroke="#2a1a10" stroke-width="58"/>
+    <path d="M 160,745 L 375,965 M 375,745 L 160,965" fill="none" stroke="#e02020" stroke-width="34"/>
+  </g>
+
+  <!-- title -->
+  <text x="512" y="200" text-anchor="middle" font-family="Lilita One" font-size="190" fill="#ffd34d" stroke="#2a1a10" stroke-width="30" stroke-linejoin="round" paint-order="stroke">CAPE FIX</text>
+</svg>

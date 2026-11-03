@@ -1,0 +1,35 @@
+{
+  "thunderstore": {
+    "url": "https://thunderstore.io",
+    "team": "rgeraskin",
+    "community": "valheim",
+    "categories": [
+      "mods",
+      "client-side",
+      "tweaks",
+      "deep-north-update"
+    ]
+  },
+  "hexium": {
+    "url": "https://valheim.hexium.gg",
+    "team": "rgeraskin",
+    "community": "valheim",
+    "categories": [
+      "Visuals",
+      "Cosmetics",
+      "Quality of Life",
+      "Open Source",
+      "Valheim 1.0"
+    ],
+    "installLocation": "client"
+  },
+  "nexus": {
+    "url": "https://api.nexusmods.com",
+    "game": "valheim",
+    "modId": 0,
+    "modFileId": "",
+    "pageDescription": "package/nexus-description.bbcode",
+    "name": "SeatedCapeFix {version}",
+    "description": "SeatedCapeFix {version}: the plugin. Needs BepInExPack Valheim. Client-side: install it on your game only, nothing on the server."
+  }
+}

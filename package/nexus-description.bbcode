@@ -1,0 +1,72 @@
+[size=4][b]Description[/b][/size]
+Your cape no longer clips through the seat when you sit. At the helm of a karve or a longship, on a bench or a stool, in a cart or a sled, sitting on the ground, and on seats from other mods: the cape lies on what you sit on and falls over its edge, the way a cape does.
+
+[b]100% client-side.[/b] Nothing to install on the server: it works on any dedicated server, on a friend's local host and in single player. You see the fix on every player, whether they have the mod or not.
+
+[img]https://raw.githubusercontent.com/rgeraskin/valheim-seated-cape-fix/master/package/gallery/1-karve.jpg[/img]
+
+[img]https://raw.githubusercontent.com/rgeraskin/valheim-seated-cape-fix/master/package/gallery/2-karve-stern.jpg[/img]
+
+[size=4][b]What it does[/b][/size]
+[list]
+[*][b]A seat that ends behind you[/b] (bench, stool, log, sea chest): the cape lies on the seat and falls over its back edge.
+[*][b]A floor with a wall behind[/b] (longship helm, Winter Sled, cart with a seat): the cape lies on the floor and gathers in front of the wall.
+[*][b]A floor that goes on[/b] (a ship's deck, the ground): the cape lies on it.
+[*][b]A hull around you[/b] (karve helm: the stern narrows behind you): the cape lies on the floor between the sides of the hull.
+[*][b]A chair or a throne with a backrest right behind you[/b] (chair, throne, sofa): unchanged, the cape goes behind the backrest, which hides it best.
+[/list]
+It needs no list of seats: it reads the shape of whatever you sit on, so ships and furniture from other mods work too (the ones tested are listed under Installation).
+
+[img]https://raw.githubusercontent.com/rgeraskin/valheim-seated-cape-fix/master/package/gallery/3-ground.jpg[/img]
+
+[img]https://raw.githubusercontent.com/rgeraskin/valheim-seated-cape-fix/master/package/gallery/4-sled.jpg[/img]
+
+[img]https://raw.githubusercontent.com/rgeraskin/valheim-seated-cape-fix/master/package/gallery/5-cart.jpg[/img]
+
+[size=4][b]Good to know[/b][/size]
+[list]
+[*][b]Multiplayer:[/b] with the mod you see every player's cape fixed; players without it see the vanilla game, also on you.
+[*][b]Riding[/b] a lox, an asksvin or a modded mount counts as sitting, but there is no seat to measure on a creature's back: the cape only gets a short edge behind you and looks about as in the vanilla game.
+[*]Standing at the mast or at the prow, or lying down, isn't sitting: the mod leaves the cape alone there.
+[*]A few seats are shaped in ways it can't fully read yet: the barrel of OdinsBarrelRide (the cape can still poke through its side) and the slatted sides of a Winter Sled (the tips of a long cape can show between the slats).
+[*]The cape keeps its own physics: it still swings, flutters in the wind and follows you. The mod only adds something for it to lie on.
+[/list]
+
+[size=4][b]Configuration[/b][/size]
+BepInEx/config/rgeraskin.SeatedCapeFix.cfg. [url=https://thunderstore.io/c/valheim/p/Azumatt/Official_BepInEx_ConfigurationManager/]Configuration Manager[/url] (F1) changes it in game, and a change takes effect at once.
+[list]
+[*][b]General / Enabled[/b] (true): the fix on or off (for comparing with the vanilla game).
+[*][b]Debug / Log[/b] (false): log the seat found for each sitting player.
+[/list]
+
+[size=4][b]Installation[/b][/size]
+Needs only [url=https://www.nexusmods.com/valheim/mods/3605]BepInExPack Valheim[/url]. Install with a mod manager, or put SeatedCapeFix.dll into BepInEx/plugins. Only you need it: not the server, not the other players.
+
+Tested on Valheim 1.0.21 with BepInExPack 5.4.2351 on Windows and macOS: in single player, in player-hosted games and on dedicated servers, with capes of every tier, on ships at anchor and sailing through a storm. Tested with the ships and seats of these mods:
+[list]
+[*][url=https://thunderstore.io/c/valheim/p/blacks7ar/BoatAdditions/]BoatAdditions[/url]: its eight boats, at the helm and on the benches
+[*][url=https://thunderstore.io/c/valheim/p/Marlthon/OdinShip/]OdinShip[/url]: its cargo ships, warship and canoes
+[*][url=https://thunderstore.io/c/valheim/p/OdinPlus/OdinsBarrelRide/]OdinsBarrelRide[/url]: the barrel and the duck
+[*][url=https://thunderstore.io/c/valheim/p/OdinPlus/OdinHorse/]OdinHorse[/url]: the horse, the horse cart and its chair
+[*][url=https://thunderstore.io/c/valheim/p/rgeraskin/WinterSled/]Winter Sled[/url]: the sled and the vanilla cart's seat
+[*][url=https://thunderstore.io/c/valheim/p/blacks7ar/FineWoodFurnitures/]FineWoodFurnitures[/url]: benches, chairs and stools
+[*][url=https://thunderstore.io/c/valheim/p/Balrond/balrond_furniture_reborn/]Balrond Furniture Reborn[/url]: benches, chairs, stools and sofas
+[/list]
+
+[size=4][b]How it works[/b][/size]
+Capes are simulated cloth. Cloth on a character collides only with the character's own body, never with the world, so when you sit down nothing stops it from dropping straight through the seat, the deck or the hull under you.
+
+While a player sits, the mod measures what is under and behind them with a few short raycasts, works out which of the shapes above it is, and gives the cape matching invisible colliders: rows along a seat's edge, or planes for a floor, a wall and a hull's sides. Other players' capes are simulated on your computer too, so the fix shows on them as well.
+
+It costs nothing you can notice: a sitting player is measured twice a second (about 0.1 ms on a desktop PC), only while you can see them, and nothing at all while everyone stands.
+
+[size=4][b]Made with AI[/b][/size]
+This mod (code, tests, images and this text) was made entirely with AI, and tested in the game.
+
+[size=4][b]Credits[/b][/size]
+The title on the mod's images is set in [url=https://fonts.google.com/specimen/Cinzel]Cinzel[/url] (Natanael Gama, SIL Open Font License). The icon's title is set in [url=https://fonts.google.com/specimen/Lilita+One]Lilita One[/url] (Juan Montoreano, SIL Open Font License).
+
+[size=4][b]License[/b][/size]
+MIT. Source code: [url=https://github.com/rgeraskin/valheim-seated-cape-fix]github.com/rgeraskin/valheim-seated-cape-fix[/url]
+
+Found a bug or a seat where the cape still pokes through? Please report it on the [url=https://github.com/rgeraskin/valheim-seated-cape-fix/issues]GitHub issues page[/url], ideally with a screenshot and the name of the mod the seat comes from.

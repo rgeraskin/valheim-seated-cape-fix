@@ -1,0 +1,24 @@
+[tools]
+dotnet = "10"
+
+[env]
+# the game's Managed/ and BepInEx/core the build compiles against: valheim-dev-harness's copy (.deps links to it)
+VALHEIM_DIR = "{{config_root}}/.deps"
+
+[tasks.build]
+description = "Build the plugin"
+run = "dotnet build SeatedCapeFix/SeatedCapeFix.csproj -c Release"
+
+[tasks.build-harness]
+description = "Build the dev harness companion (needs valheim-dev-harness built next to this repo)"
+depends = ["build"]
+run = "dotnet build tools/DevHarness/SeatedCapeFixHarness.csproj -c Release"
+
+[tasks.test]
+description = "Tests: every Harmony patch still binds to the game"
+run = "dotnet test SeatedCapeFix.Tests/SeatedCapeFix.Tests.csproj -c Release"
+
+[tasks.package]
+description = "Make the Thunderstore zip in dist/"
+depends = ["build"]
+run = "tools/package.sh"

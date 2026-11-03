@@ -1,0 +1,9 @@
+{
+  "name": "SeatedCapeFix",
+  "version_number": "0.1.0",
+  "website_url": "https://github.com/rgeraskin/valheim-seated-cape-fix",
+  "description": "Seated Cape Fix: no more cape clipping through the seat when you sit. Ship helms, benches, stools, carts, sleds, the ground and modded seats. Client-side: nothing to install on the server. Open source.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2351"
+  ]
+}
