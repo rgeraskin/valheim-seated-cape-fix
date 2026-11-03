@@ -27,8 +27,8 @@
   "nexus": {
     "url": "https://api.nexusmods.com",
     "game": "valheim",
-    "modId": 0,
-    "modFileId": "",
+    "modId": 4831,
+    "modFileId": "8306025",
     "pageDescription": "package/nexus-description.bbcode",
     "name": "SeatedCapeFix {version}",
     "description": "SeatedCapeFix {version}: the plugin. Needs BepInExPack Valheim. Client-side: install it on your game only, nothing on the server."
