@@ -65,6 +65,10 @@ While a player sits, the mod measures what is under and behind them with a few s
 
 It costs nothing you can notice: a sitting player is measured twice a second (about 0.1 ms on a desktop PC), only while you can see them, and nothing at all while everyone stands.
 
+## Bugs and ideas
+
+Found a bug or a seat where the cape still pokes through, or have an idea? Tell me on the [GitHub issues page](https://github.com/rgeraskin/valheim-seated-cape-fix/issues) or in the chat for my mods, on [Discord](https://discord.gg/hxpuTQF2Bb) or [Telegram](https://t.me/+NwReoOS9x7hhYjgy), ideally with a screenshot and the name of the mod the seat comes from.
+
 ## Development
 
 Built with dotnet from [mise](https://mise.jdx.dev): `mise run build`, `mise run test`, `mise run package` (the mod's zip). The details and the in-game test harness are described in [CLAUDE.md](https://github.com/rgeraskin/valheim-seated-cape-fix/blob/master/CLAUDE.md).
@@ -81,5 +85,3 @@ This mod — code, tests, images and this text — was made entirely with AI, an
 ## License
 
 MIT, see [LICENSE](https://github.com/rgeraskin/valheim-seated-cape-fix/blob/master/LICENSE). Source code: [github.com/rgeraskin/valheim-seated-cape-fix](https://github.com/rgeraskin/valheim-seated-cape-fix).
-
-Found a bug or a seat where the cape still pokes through? Please report it on the [GitHub issues page](https://github.com/rgeraskin/valheim-seated-cape-fix/issues), ideally with a screenshot and the name of the mod the seat comes from.
